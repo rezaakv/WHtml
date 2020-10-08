@@ -35,7 +35,22 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1>Welcome</h1>
-							<p>Hi, I am Reza! <br /> I study Computer Science at UBC</a>.</p>
+							<p id="welcomeElem"></p>
+							
+							<script>
+							var i = 0;
+							var txt = 'Hi, I am Reza. I am a Software Engineer and student at UBC Vancouver.';
+							var speed = 80;
+							
+							function typeWriter() {
+							  if (i < txt.length) {
+								document.getElementById("welcomeElem").innerHTML += txt.charAt(i);
+								i++;
+								setTimeout(typeWriter, speed);
+							  }
+							}
+							typeWriter();
+							</script>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Check out my Resume</a></li>
 							</ul>
