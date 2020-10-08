@@ -1,0 +1,4 @@
+Notes regarding site: 
+Add Email form, and Captcha API
+Add a blog
+Add internet resume
